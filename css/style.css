@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    background-image: url('/files/texture.webp');
+    background-image: url('../files/texture.webp');
     background-repeat: repeat;
     background-size: cover;
     color: #222;
@@ -24,7 +24,7 @@ body {
 
 button {
     background-color: #222;
-    background-image: url("/files/arrow_top_white.png");
+    background-image: url("../files/arrow_top_white.png");
     background-position: center;
     background-size: 1.5rem;
     background-repeat: no-repeat;
@@ -42,7 +42,7 @@ button {
 
 button:hover {
     background-color: #fff;
-    background-image: url("/files/arrow_top_black.png");
+    background-image: url("../files/arrow_top_black.png");
     color: #222;
     cursor: pointer;
     padding: 2.8rem;
