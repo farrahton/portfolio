@@ -1,0 +1,274 @@
+html,
+body {
+    border: 0;
+    font-family: Fahkwang;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    background-image: url('/files/texture.webp');
+    background-repeat: repeat;
+    background-size: cover;
+    color: #222;
+    font-size: 1.6rem;
+}
+
+button {
+    background-color: #222;
+    background-image: url("/files/arrow_top_white.png");
+    background-position: center;
+    background-size: 1.5rem;
+    background-repeat: no-repeat;
+    border: none;
+    bottom: 20px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    outline: none;
+    padding: 2.2rem;
+    position: fixed;
+    right: 30px;
+    z-index: 99;
+}
+
+button:hover {
+    background-color: #fff;
+    background-image: url("/files/arrow_top_black.png");
+    color: #222;
+    cursor: pointer;
+    padding: 2.8rem;
+}
+
+a {
+    color: #222;
+    text-decoration: none;
+}
+
+a.hyperlink {
+    text-decoration: underline;
+}
+
+header {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    height: 100%;
+    position: relative;
+    scroll-snap-align: start;
+    z-index: 1;
+}
+
+header article {
+    bottom: auto;
+    font-size: 2.2rem;
+    left: 50%;
+    position: absolute;
+    right: auto;
+    text-align: center;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* ul {
+    position: sticky;
+    top: 1px;
+    z-index: 103;
+} */
+
+.button {
+    background: #222;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+}
+
+.button:hover,
+.filter-container .active {
+    background: rgb(6, 54, 48, 15%);
+    color: #222;
+    letter-spacing: .2rem;
+}
+
+@media only screen and (min-width: 768px) {
+    header article {
+        font-size: 3.6rem;
+    }
+}
+
+section {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3em 5% 0;
+    position: relative;
+    scroll-snap-align: start;
+}
+
+section h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1em;
+}
+
+section p {
+    line-height: 1.6;
+}
+
+section .content::after {
+    /* phone image on small devices */
+    content: '';
+    display: block;
+    padding: 60% 0;
+    margin: 2em auto 0;
+    width: 100%;
+}
+
+section:nth-of-type(odd) {
+    background-color: rgb(6, 54, 48, 15%);
+}
+
+section:nth-of-type(even) {
+    background-color: rgb(213, 159, 51, 15%);
+}
+
+section.unleash .content::after {
+    background: url("../files/Unleash_website_transparent.png") no-repeat;
+    background-size: 100% auto;
+}
+
+section.indie .content::after {
+    background: url("../files/indie.png") no-repeat;
+    background-size: 100% auto;
+}
+
+section.laptop_redesign .content::after {
+    background: url("../files/laptop_redesign.png") no-repeat;
+    background-size: 100% auto;
+}
+
+section.kwartet .content::after {
+    background: url("../files/kwartetspel_blm.png") no-repeat;
+    background-size: 100% auto;
+}
+
+section.so_nuts .content::after {
+    background: url("../files/so_nuts_transparent.png") no-repeat;
+    background-size: 100% auto;
+}
+
+section.memory .content::after {
+    background: url("../files/memory_game.png") no-repeat;
+    background-size: 100% auto;
+}
+
+section.de_gezonde_stad_socials .content::after {
+    background: url("../files/degezondestad.png") no-repeat;
+    background-size: 100% auto;
+}
+
+section.arfid .content::after {
+    background: url("../files/arfid.png") no-repeat;
+    background-size: 100% auto;
+}
+
+section.hva_pride .content::after {
+    background: url("../files/hva_pride_campagne.png") no-repeat;
+    background-size: 100% auto;
+}
+
+section.LTGL .content::after {
+    background: url("../files/LTGL.png") no-repeat;
+    background-size: 100% auto;
+}
+
+@media only screen and (min-width: 768px) {
+    section {
+        background-position: right;
+        background-size: 50rem;
+        height: 100%;
+        padding: 0;
+    }
+
+    section h2 {
+        font-size: 3.6rem;
+    }
+
+    section p {
+        font-size: 1.8rem;
+        line-height: 1.8;
+    }
+
+    section .content {
+        bottom: auto;
+        left: 5%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50%;
+    }
+
+    section .content::after {
+        display: none !important;
+    }
+
+    section.unleash {
+        background-image: url("../files/Unleash_website_transparent.png");
+    }
+
+    section.indie {
+        background-image: url("../files/indie.png");
+    }
+
+    section.laptop_redesign {
+        background-image: url("../files/laptop_redesign.png");
+    }
+
+    section.kwartet {
+        background-image: url("../files/kwartetspel_blm.png");
+    }
+
+    section.so_nuts {
+        background-image: url("../files/so_nuts_transparent.png");
+    }
+
+    section.memory {
+        background-image: url("../files/memory_game.png");
+    }
+
+    section.de_gezonde_stad_socials {
+        background-image: url("../files/degezondestad.png");
+    }
+
+    section.arfid {
+        background-image: url("../files/arfid.png");
+    }
+
+    section.hva_pride {
+        background-image: url("../files/hva_pride_campagne.png");
+    }
+
+    section.LTGL {
+        background-image: url("../files/LTGL.png");
+    }
+}
+
+@media only screen and (min-width: 1048px) {
+    section {
+        background-attachment: fixed;
+        background-size: 80rem;
+    }
+
+    section .content {
+        left: 10%;
+        width: 30%;
+    }
+}
