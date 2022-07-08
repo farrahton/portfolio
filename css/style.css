@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    background-image: url('../files/texture.webp');
+    background-image: url("../files/texture.webp");
     background-repeat: repeat;
     background-size: cover;
     color: #222;
