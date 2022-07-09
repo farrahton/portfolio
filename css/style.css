@@ -1,3 +1,20 @@
+:root {
+    --dark_mode_green: rgb(52, 103, 81);
+    --dark_mode_black: rgb(22, 22, 22);
+    --dark_mode_background_black: rgb(34, 34, 34);
+    --dark_mode_black_lighter: rgb(42, 42, 42);
+    --dark_mode_gray_text: rgb(224, 224, 224);
+    --dark_mode_reddish: rgb(200, 75, 49);
+    --dark_mode_nudish: rgb(236, 219, 186);
+
+    --version_1_color_odd: rgb(6, 54, 48, 15%);
+    --version_1_color_even: rgb(213, 159, 51, 15%);
+    --version_1_black_color_text: #222;
+    --version_1_white_color_text: #fff;
+    --version_1_green_accent: rgb(174, 192, 133);
+
+}
+
 html,
 body {
     border: 0;
@@ -15,6 +32,7 @@ html {
 }
 
 body {
+    background-color: var(--dark_mode_background_black);
     background-image: url("../files/texture.webp");
     background-repeat: repeat;
     background-size: cover;
@@ -74,6 +92,7 @@ header article {
     text-align: center;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
+    width: 100%;
 }
 
 /* ul {
@@ -82,7 +101,13 @@ header article {
     z-index: 103;
 } */
 
-.button {
+ul.filter-container {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+}
+
+/* .button {
     background: #222;
     color: #fff;
     cursor: pointer;
@@ -97,7 +122,48 @@ header article {
     background: rgb(6, 54, 48, 15%);
     color: #222;
     letter-spacing: .2rem;
+} */
+
+
+
+.button {
+    border: none;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.7rem;
+    background-color: #222;
+    padding: 17px 60px;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
 }
+
+.button span {
+    position: relative;
+    z-index: 1;
+}
+
+.button:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 550%;
+    width: 20em;
+    background: rgb(174, 192, 133);
+    transition: all .5s ease-in-out;
+    transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.button:hover:after {
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
 
 @media only screen and (min-width: 768px) {
     header article {
