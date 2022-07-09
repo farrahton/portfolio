@@ -1,11 +1,11 @@
 :root {
-    --dark_mode_green: rgb(52, 103, 81);
+    --dark_mode_green: rgb(52, 103, 81, 80%);
     --dark_mode_black: rgb(22, 22, 22);
-    --dark_mode_background_black: rgb(34, 34, 34);
-    --dark_mode_black_lighter: rgb(42, 42, 42);
+    --dark_mode_background_black: rgb(34, 34, 34, 80%);
+    --dark_mode_black_lighter: rgb(42, 42, 42, 80%);
     --dark_mode_gray_text: rgb(224, 224, 224);
-    --dark_mode_reddish: rgb(200, 75, 49);
-    --dark_mode_nudish: rgb(236, 219, 186);
+    --dark_mode_reddish: rgb(200, 75, 49, 80%);
+    --dark_mode_nudish: rgb(236, 219, 186, 80%);
 
     --version_1_color_odd: rgb(6, 54, 48, 15%);
     --version_1_color_even: rgb(213, 159, 51, 15%);
@@ -13,6 +13,12 @@
     --version_1_white_color_text: #fff;
     --version_1_green_accent: rgb(174, 192, 133);
 
+    --test_1: rgba(244, 206, 107, 1);
+    --test_2: rgba(190, 208, 160, 1);
+    --test_3: rgba(240, 236, 217, 1);
+    --test_4: rgba(242, 197, 185, 1);
+    --test_5: rgba(200, 230, 223, 1);
+    --test_6: rgba(8, 47, 45, 1);
 }
 
 html,
@@ -23,6 +29,7 @@ body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    color: var(--test_6);
 }
 
 html {
@@ -33,22 +40,21 @@ html {
 
 body {
     background-color: var(--dark_mode_background_black);
-    background-image: url("../files/texture.webp");
+    /* background-image: url("../files/texture.webp"); */
+    /* background-image: url("../files/texture_bg.jpeg"); */
     background-repeat: repeat;
     background-size: cover;
-    color: #222;
     font-size: 1.6rem;
 }
 
 button {
-    background-color: #222;
+    background-color: var(--dark_mode_black_lighter);
     background-image: url("../files/arrow_top_white.png");
     background-position: center;
     background-size: 1.5rem;
     background-repeat: no-repeat;
     border: none;
     bottom: 20px;
-    color: #fff;
     cursor: pointer;
     display: none;
     outline: none;
@@ -59,7 +65,7 @@ button {
 }
 
 button:hover {
-    background-color: #fff;
+    background-color: var(--dark_mode_gray_text);
     background-image: url("../files/arrow_top_black.png");
     color: #222;
     cursor: pointer;
@@ -76,6 +82,7 @@ a.hyperlink {
 }
 
 header {
+    background-color: var(--test_2);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     height: 100%;
     position: relative;
@@ -109,7 +116,6 @@ ul.filter-container {
 
 /* .button {
     background: #222;
-    color: #fff;
     cursor: pointer;
     display: inline-block;
     font-size: 1.7rem;
@@ -127,17 +133,17 @@ ul.filter-container {
 
 
 .button {
+    background-color: var(--dark_mode_black_lighter);
     border: none;
+    color: var(--dark_mode_gray_text);
     display: inline-block;
     text-align: center;
     cursor: pointer;
     outline: none;
     overflow: hidden;
     position: relative;
-    color: #fff;
     font-weight: 700;
     font-size: 1.7rem;
-    background-color: #222;
     padding: 17px 60px;
     margin: 0 auto;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
@@ -155,7 +161,7 @@ ul.filter-container {
     top: 0;
     height: 550%;
     width: 20em;
-    background: rgb(174, 192, 133);
+    background: var(--test_6);
     transition: all .5s ease-in-out;
     transform: translateX(-98%) translateY(-25%) rotate(45deg);
 }
@@ -199,11 +205,12 @@ section .content::after {
 }
 
 section:nth-of-type(odd) {
-    background-color: rgb(6, 54, 48, 15%);
+    background-color: var(--dark_mode_nudish);
+    color: var(--dark_mode_background_black);
 }
 
 section:nth-of-type(even) {
-    background-color: rgb(213, 159, 51, 15%);
+    background-color: var(--dark_mode_reddish);
 }
 
 section.unleash .content::after {
