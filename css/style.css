@@ -55,6 +55,7 @@ button {
     padding: 2.2rem;
     position: fixed;
     right: 30px;
+    transition: all .5s ease-in-out;
     z-index: 99;
 }
 
@@ -63,7 +64,9 @@ button:hover {
     background-image: url("../files/arrow_top_black.png");
     color: #222;
     cursor: pointer;
-    padding: 2.8rem;
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transition: all .5s ease-in-out;
+    transform: translateY(-1rem);
 }
 
 a {
@@ -138,8 +141,7 @@ ul.filter-container {
     font-weight: 700;
     font-size: 1.7rem;
     background-color: #222;
-    padding: 17px 60px;
-    margin: 0 auto;
+    padding: 1rem 4rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
 }
 
@@ -153,9 +155,9 @@ ul.filter-container {
     position: absolute;
     left: 0;
     top: 0;
-    height: 550%;
-    width: 20em;
-    background: rgb(174, 192, 133);
+    height: 650%;
+    width: 26rem;
+    background: darkgrey;
     transition: all .5s ease-in-out;
     transform: translateX(-98%) translateY(-25%) rotate(45deg);
 }
