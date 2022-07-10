@@ -1,8 +1,8 @@
-const category_title = document.querySelectorAll('.category-title')
+const category = document.querySelectorAll('.category')
 const all_category_posts = document.querySelectorAll('.box')
 
-for (let i = 0; i < category_title.length; i++) {
-    category_title[i].addEventListener('click', filter_posts.bind(this, category_title[i]))
+for (let i = 0; i < category.length; i++) {
+    category[i].addEventListener('click', filter_posts.bind(this, category[i]))
 }
 
 function filter_posts(item) {
@@ -17,11 +17,11 @@ function filter_posts(item) {
 }
 
 function change_active_category(activeItem) {
-    for (let i = 0; i < category_title.length; i++) {
-        category_title[i].classList.remove('active')
+    for (let i = 0; i < category.length; i++) {
+        category[i].classList.remove('active')
     }
     activeItem.classList.add('active')
-};
+}
 
 
 //Get the button

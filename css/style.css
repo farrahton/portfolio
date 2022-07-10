@@ -12,7 +12,6 @@
     --version_1_black_color_text: #222;
     --version_1_white_color_text: #fff;
     --version_1_green_accent: rgb(174, 192, 133);
-
 }
 
 html,
@@ -32,7 +31,7 @@ html {
 }
 
 body {
-    background-color: var(--dark_mode_background_black);
+    /* background-color: var(--dark_mode_background_black); */
     background-image: url("../files/texture.webp");
     background-repeat: repeat;
     background-size: cover;
@@ -42,7 +41,7 @@ body {
 
 button {
     background-color: #222;
-    background-image: url("../files/arrow_top_white.png");
+    background-image: url("../files/arrow_top_white.webp");
     background-position: center;
     background-size: 1.5rem;
     background-repeat: no-repeat;
@@ -61,7 +60,7 @@ button {
 
 button:hover {
     background-color: #fff;
-    background-image: url("../files/arrow_top_black.png");
+    background-image: url("../files/arrow_top_black.webp");
     color: #222;
     cursor: pointer;
     box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
@@ -88,7 +87,7 @@ header {
 
 header article {
     bottom: auto;
-    font-size: 2.2rem;
+    /* font-size: 2.2rem; */
     left: 50%;
     position: absolute;
     right: auto;
@@ -96,6 +95,15 @@ header article {
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     width: 100%;
+}
+
+header h1 {
+    font-size: 6rem;
+    margin: auto;
+}
+
+header p {
+    font-size: 2rem;
 }
 
 /* ul {
@@ -150,7 +158,7 @@ ul.filter-container {
     z-index: 1;
 }
 
-.button:after {
+.button::after {
     content: "";
     position: absolute;
     left: 0;
@@ -162,14 +170,19 @@ ul.filter-container {
     transform: translateX(-98%) translateY(-25%) rotate(45deg);
 }
 
-.button:hover:after {
+.filter-container .active {
+    background: darkgrey;
+}
+
+.button:hover::after {
     transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
 
 
 @media only screen and (min-width: 768px) {
-    header article {
-        font-size: 3.6rem;
+    header h1 {
+        font-size: 7.6rem;
+        margin: auto;
     }
 }
 
@@ -209,52 +222,62 @@ section:nth-of-type(even) {
 }
 
 section.unleash .content::after {
-    background: url("../files/Unleash_website_transparent.png") no-repeat;
+    background: url("../files/unleash.webp");
+    background-repeat: no-repeat;
     background-size: 100% auto;
 }
 
 section.indie .content::after {
-    background: url("../files/indie.png") no-repeat;
+    background: url("../files/indie_aesthetic.webp");
+    background-repeat: no-repeat;
     background-size: 100% auto;
 }
 
 section.laptop_redesign .content::after {
-    background: url("../files/laptop_redesign.png") no-repeat;
+    background: url("../files/laptop_redesign.webp");
+    background-repeat: no-repeat;
     background-size: 100% auto;
 }
 
 section.kwartet .content::after {
-    background: url("../files/kwartetspel_blm.png") no-repeat;
+    background: url("../files/blm_game.webp");
+    background-repeat: no-repeat;
     background-size: 100% auto;
 }
 
 section.so_nuts .content::after {
-    background: url("../files/so_nuts_transparent.png") no-repeat;
+    background: url("../files/so_nuts.webp");
+    background-repeat: no-repeat;
     background-size: 100% auto;
 }
 
 section.memory .content::after {
-    background: url("../files/memory_game.png") no-repeat;
+    background: url("../files/memory_game.webp");
+    background-repeat: no-repeat;
     background-size: 100% auto;
 }
 
 section.de_gezonde_stad_socials .content::after {
-    background: url("../files/degezondestad.png") no-repeat;
+    background: url("../files/de_gezonde_stad.webp");
+    background-repeat: no-repeat;
     background-size: 100% auto;
 }
 
 section.arfid .content::after {
-    background: url("../files/arfid.png") no-repeat;
+    background: url("../files/arfid.webp");
+    background-repeat: no-repeat;
     background-size: 100% auto;
 }
 
 section.hva_pride .content::after {
-    background: url("../files/hva_pride_campagne.png") no-repeat;
+    background: url("../files/hva_pride.webp");
+    background-repeat: no-repeat;
     background-size: 100% auto;
 }
 
 section.LTGL .content::after {
-    background: url("../files/LTGL.png") no-repeat;
+    background: url("../files/LTGL.webp");
+    background-repeat: no-repeat;
     background-size: 100% auto;
 }
 
@@ -289,43 +312,43 @@ section.LTGL .content::after {
     }
 
     section.unleash {
-        background-image: url("../files/Unleash_website_transparent.png");
+        background-image: url("../files/unleash.webp");
     }
 
     section.indie {
-        background-image: url("../files/indie.png");
+        background-image: url("../files/indie_aesthetic.webp");
     }
 
     section.laptop_redesign {
-        background-image: url("../files/laptop_redesign.png");
+        background-image: url("../files/laptop_redesign.webp");
     }
 
     section.kwartet {
-        background-image: url("../files/kwartetspel_blm.png");
+        background-image: url("../files/blm_game.webp");
     }
 
     section.so_nuts {
-        background-image: url("../files/so_nuts_transparent.png");
+        background-image: url("../files/so_nuts.webp");
     }
 
     section.memory {
-        background-image: url("../files/memory_game.png");
+        background-image: url("../files/memory_game.webp");
     }
 
     section.de_gezonde_stad_socials {
-        background-image: url("../files/degezondestad.png");
+        background-image: url("../files/de_gezonde_stad.webp");
     }
 
     section.arfid {
-        background-image: url("../files/arfid.png");
+        background-image: url("../files/arfid.webp");
     }
 
     section.hva_pride {
-        background-image: url("../files/hva_pride_campagne.png");
+        background-image: url("../files/hva_pride.webp");
     }
 
     section.LTGL {
-        background-image: url("../files/LTGL.png");
+        background-image: url("../files/LTGL.webp");
     }
 }
 
