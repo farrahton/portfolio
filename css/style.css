@@ -205,52 +205,42 @@ section .content::after {
 
 section:nth-of-type(2n-1) {
     background-color: var(--color_1);
-    color: #5f4f25;
 }
 
 section:nth-of-type(2n+0) {
     background-color: var(--color_2);
-    color: #4a542a;
 }
 
 section:nth-of-type(3n+0) {
     background-color: var(--color_3);
-    color: #7c4d3e;
 }
 
 section:nth-of-type(4n+0) {
     background-color: var(--color_4);
-    color: #687b7f;
 }
 
 section:nth-of-type(5n+0) {
     background-color: var(--color_5);
-    color: #726052;
 }
 
 section:nth-of-type(6n+0) {
     background-color: var(--color_6);
-    color: #3c4654;
 }
 
 section:nth-of-type(7n+0) {
     background-color: var(--color_7);
-    color: #64503e;
 }
 
 section:nth-of-type(8n+0) {
     background-color: var(--color_8);
-    color: #215536;
 }
 
 section:nth-of-type(9n+0) {
     background-color: var(--color_9);
-    color: #4b291e;
 }
 
 section:nth-of-type(10n+0) {
     background-color: var(--color_10);
-    color: #6f6f6f;
 }
 
 section.unleash .content::after {
