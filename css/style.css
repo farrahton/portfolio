@@ -116,7 +116,7 @@ header ul {
 
 header li,
 .external_link {
-    background-color: var(--button);
+    background-color: #222;
     border: none;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
     cursor: pointer;
@@ -129,12 +129,13 @@ header li,
 }
 
 header li span {
+    color: #fff;
     position: relative;
     z-index: 1;
 }
 
 header li::after {
-    background-color: var(--button_triangle);
+    background-color: darkgray;
     content: "";
     height: 650%;
     left: 0;
@@ -147,7 +148,7 @@ header li::after {
 
 .filter-container .active,
 section header li {
-    background-color: var(--button_triangle);
+    background-color: darkgray;
 }
 
 header li:hover::after {
