@@ -182,7 +182,7 @@ section p {
 }
 
 .external_link {
-    background-color: #e9ede9b1;
+    color: #fff;
     transition: all .5s ease-in-out;
 }
 
@@ -205,7 +205,6 @@ section .content::after {
 
 section:nth-of-type(2n-1) {
     background-color: var(--color_1);
-    /* color: #77632f; */
     color: #5f4f25;
 }
 
