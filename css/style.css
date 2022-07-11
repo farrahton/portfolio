@@ -17,7 +17,7 @@
 html,
 body {
     border: 0;
-    font-family: Fahkwang;
+    font-family: 'Raleway';
     height: 100%;
     margin: 0;
     padding: 0;
@@ -31,7 +31,6 @@ html {
 }
 
 body {
-    /* background-color: var(--dark_mode_background_black); */
     background-image: url("../files/texture.webp");
     background-repeat: repeat;
     background-size: cover;
@@ -46,6 +45,7 @@ button {
     background-size: 1.5rem;
     background-repeat: no-repeat;
     border: none;
+    border-radius: 0 10px 0 10px;
     bottom: 20px;
     color: #fff;
     cursor: pointer;
@@ -63,7 +63,7 @@ button:hover {
     background-image: url("../files/arrow_top_black.webp");
     color: #222;
     cursor: pointer;
-    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
     transition: all .5s ease-in-out;
     transform: translateY(-1rem);
 }
@@ -88,7 +88,6 @@ header {
 
 header article {
     bottom: auto;
-    /* font-size: 2.2rem; */
     left: 50%;
     position: absolute;
     right: auto;
@@ -118,10 +117,11 @@ header li,
 .external_link {
     background-color: #222;
     border: none;
+    border-radius: 0 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
     cursor: pointer;
     display: inline-block;
-    font-weight: 700;
+    font-weight: 510;
     font-size: 1.7rem;
     overflow: hidden;
     position: relative;
